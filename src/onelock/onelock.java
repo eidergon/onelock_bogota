@@ -57,12 +57,13 @@ public class onelock extends javax.swing.JFrame {
         myapp = new javax.swing.JButton();
         notus = new javax.swing.JButton();
         agendamiento = new javax.swing.JButton();
-        esm = new javax.swing.JButton();
+        myit = new javax.swing.JButton();
         crm = new javax.swing.JButton();
         escritorio = new javax.swing.JButton();
         notus_osm = new javax.swing.JButton();
         dime = new javax.swing.JButton();
         peog = new javax.swing.JButton();
+        contacto = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Aplicativos Bogota");
@@ -353,23 +354,22 @@ public class onelock extends javax.swing.JFrame {
             }
         });
 
-        esm.setBackground(new java.awt.Color(102, 102, 255));
-        esm.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        esm.setForeground(new java.awt.Color(255, 255, 255));
-        esm.setText("ESM");
-        esm.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        esm.setEnabled(false);
-        esm.addMouseListener(new java.awt.event.MouseAdapter() {
+        myit.setBackground(new java.awt.Color(102, 102, 255));
+        myit.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        myit.setForeground(new java.awt.Color(255, 255, 255));
+        myit.setText("MY IT");
+        myit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        myit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                esmMouseEntered(evt);
+                myitMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                esmMouseExited(evt);
+                myitMouseExited(evt);
             }
         });
-        esm.addActionListener(new java.awt.event.ActionListener() {
+        myit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                esmActionPerformed(evt);
+                myitActionPerformed(evt);
             }
         });
 
@@ -467,6 +467,25 @@ public class onelock extends javax.swing.JFrame {
             }
         });
 
+        contacto.setBackground(new java.awt.Color(102, 102, 255));
+        contacto.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        contacto.setForeground(new java.awt.Color(255, 255, 255));
+        contacto.setText("Contacto Virtual");
+        contacto.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        contacto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                contactoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                contactoMouseExited(evt);
+            }
+        });
+        contacto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                contactoActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout panelLayout = new javax.swing.GroupLayout(panel);
         panel.setLayout(panelLayout);
         panelLayout.setHorizontalGroup(
@@ -496,7 +515,7 @@ public class onelock extends javax.swing.JFrame {
                             .addComponent(otp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lecta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(notus, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(esm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(myit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(peog, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(30, 30, 30)
                         .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -505,7 +524,8 @@ public class onelock extends javax.swing.JFrame {
                             .addComponent(integra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(agendamiento, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(notus_osm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(notus_osm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(contacto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addGap(20, 20, 20))
         );
         panelLayout.setVerticalGroup(
@@ -541,12 +561,14 @@ public class onelock extends javax.swing.JFrame {
                 .addGap(20, 20, 20)
                 .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(notus_osm, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(esm, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(myit, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(crm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(20, 20, 20)
                 .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(dime, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(peog, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(peog, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(contacto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0))
@@ -844,13 +866,13 @@ public class onelock extends javax.swing.JFrame {
         crm.setBackground(new Color(102, 102, 255));
     }//GEN-LAST:event_crmMouseExited
 
-    private void esmMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_esmMouseEntered
-        esm.setBackground(new Color(253, 82, 0));
-    }//GEN-LAST:event_esmMouseEntered
+    private void myitMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_myitMouseEntered
+        myit.setBackground(new Color(253, 82, 0));
+    }//GEN-LAST:event_myitMouseEntered
 
-    private void esmMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_esmMouseExited
-        esm.setBackground(new Color(102, 102, 255));
-    }//GEN-LAST:event_esmMouseExited
+    private void myitMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_myitMouseExited
+        myit.setBackground(new Color(102, 102, 255));
+    }//GEN-LAST:event_myitMouseExited
     /**
      * Hasta este punto se termina los codificacion de los botones.
      *
@@ -1102,35 +1124,44 @@ public class onelock extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_myappActionPerformed
 
-    private void esmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_esmActionPerformed
+    private void myitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_myitActionPerformed
         try {
-            String query = "SELECT * FROM Aplicativos WHERE complemento='Esm'";
-            Statement st = cx.conectar().createStatement();
-            ResultSet rs = st.executeQuery(query);
+            String query = "SELECT my_it, contraseña_myit FROM Usuarios WHERE usuario_onelock=?";
+            PreparedStatement ps = cx.conectar().prepareStatement(query);
+            ps.setString(1, usuarioActual);
+
+            ResultSet rs = ps.executeQuery();
+
             if (rs.next()) {
-                dataToSendUser = rs.getString("usuario");
-                dataToSendPass = rs.getString("contraseña");
-                this.setExtendedState(1);
-                String command = "C:\\selenium\\auto_esm.exe " + dataToSendUser + " " + dataToSendPass;
-                Process process = Runtime.getRuntime().exec(command);
+                dataToSendUser = rs.getString("my_it");
+                dataToSendPass = rs.getString("contraseña_myit");
+                if (dataToSendUser != null && !dataToSendUser.isEmpty() && dataToSendPass != null && !dataToSendPass.isEmpty()) {
+                    this.setExtendedState(1);
+                    String command = "C:\\selenium\\auto_myit.exe " + dataToSendUser + " " + dataToSendPass;
+                    Process process = Runtime.getRuntime().exec(command);
 
-                // Esperar a que el proceso de AutoIt termine antes de continuar
-                int exitCode = process.waitFor();
+                    // Esperar a que el proceso de AutoIt termine antes de continuar
+                    int exitCode = process.waitFor();
 
-                if (exitCode == 0) {
-                    // El proceso de AutoIt se completó con éxito
-                    System.out.println("Proceso de AutoIt completado correctamente.");
+                    if (exitCode == 0) {
+                        // El proceso de AutoIt se completó con éxito
+                        System.out.println("Proceso de AutoIt completado correctamente.");
+                    } else {
+                        // El proceso de AutoIt terminó con un código de error
+                        System.err.println("Proceso de AutoIt terminado con código de error: " + exitCode);
+                    }
                 } else {
-                    // El proceso de AutoIt terminó con un código de error
-                    System.err.println("Proceso de AutoIt terminado con código de error: " + exitCode);
+                    Icon x = new ImageIcon(getClass().getResource("/img/letterx_83737.png"));
+                    JOptionPane.showMessageDialog(null, "No tienes acceso al aplicativo", "ERROR", JOptionPane.INFORMATION_MESSAGE, x);
                 }
             } else {
-                JOptionPane.showMessageDialog(null, "ERROR");
+                Icon x = new ImageIcon(getClass().getResource("/img/letterx_83737.png"));
+                JOptionPane.showMessageDialog(null, "Documento No Valido", "ERROR", JOptionPane.INFORMATION_MESSAGE, x);
             }
         } catch (SQLException | IOException | InterruptedException ex) {
             System.out.println(ex);
         }
-    }//GEN-LAST:event_esmActionPerformed
+    }//GEN-LAST:event_myitActionPerformed
 
     private void caliexpressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_caliexpressActionPerformed
         try {
@@ -1410,6 +1441,53 @@ public class onelock extends javax.swing.JFrame {
         peog.setBackground(new Color(102, 102, 255));
     }//GEN-LAST:event_peogMouseExited
 
+    private void contactoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_contactoMouseEntered
+        contacto.setBackground(new Color(253, 82, 0));
+    }//GEN-LAST:event_contactoMouseEntered
+
+    private void contactoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_contactoMouseExited
+        contacto.setBackground(new Color(102, 102, 255));
+    }//GEN-LAST:event_contactoMouseExited
+
+    private void contactoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contactoActionPerformed
+        try {
+            String query = "SELECT contacto, contraseña_contacto FROM Usuarios WHERE usuario_onelock=?";
+            PreparedStatement ps = cx.conectar().prepareStatement(query);
+            ps.setString(1, usuarioActual);
+
+            ResultSet rs = ps.executeQuery();
+
+            if (rs.next()) {
+                dataToSendUser = rs.getString("contacto");
+                dataToSendPass = rs.getString("contraseña_contacto");
+                if (dataToSendUser != null && !dataToSendUser.isEmpty() && dataToSendPass != null && !dataToSendPass.isEmpty()) {
+                    this.setExtendedState(1);
+                    String command = "C:\\selenium\\auto_contacto.exe " + dataToSendUser + " " + dataToSendPass;
+                    Process process = Runtime.getRuntime().exec(command);
+
+                    // Esperar a que el proceso de AutoIt termine antes de continuar
+                    int exitCode = process.waitFor();
+
+                    if (exitCode == 0) {
+                        // El proceso de AutoIt se completó con éxito
+                        System.out.println("Proceso de AutoIt completado correctamente.");
+                    } else {
+                        // El proceso de AutoIt terminó con un código de error
+                        System.err.println("Proceso de AutoIt terminado con código de error: " + exitCode);
+                    }
+                } else {
+                    Icon x = new ImageIcon(getClass().getResource("/img/letterx_83737.png"));
+                    JOptionPane.showMessageDialog(null, "No tienes acceso al aplicativo", "ERROR", JOptionPane.INFORMATION_MESSAGE, x);
+                }
+            } else {
+                Icon x = new ImageIcon(getClass().getResource("/img/letterx_83737.png"));
+                JOptionPane.showMessageDialog(null, "Documento No Valido", "ERROR", JOptionPane.INFORMATION_MESSAGE, x);
+            }
+        } catch (SQLException | IOException | InterruptedException ex) {
+            System.out.println(ex);
+        }
+    }//GEN-LAST:event_contactoActionPerformed
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -1453,16 +1531,17 @@ public class onelock extends javax.swing.JFrame {
     private javax.swing.JButton agendamiento;
     private javax.swing.JButton biometrica;
     private javax.swing.JButton caliexpress;
+    private javax.swing.JButton contacto;
     private javax.swing.JButton crm;
     private javax.swing.JButton dime;
     private javax.swing.JButton escritorio;
-    private javax.swing.JButton esm;
     private javax.swing.JButton id_vision;
     private javax.swing.JButton integra;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JButton lecta;
     private javax.swing.JButton myapp;
+    private javax.swing.JButton myit;
     private javax.swing.JButton notus;
     private javax.swing.JButton notus_osm;
     private javax.swing.JButton otp;
